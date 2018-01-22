@@ -37,8 +37,12 @@ public:
 
 	//Return the absolute value of a given number
 	float abs(float x);
+
 	//Function to determine if a number is a power of two
 	bool is_power_of_two(int number);
+
+	//Function to interpolate a float (or an int) between a start value and an end value, at a fraction specified from start (0.0) to end (1.0)
+	template <class number> number interpolate(number min, number max, float fraction);
 
 };
 
@@ -172,4 +176,10 @@ inline number MathUtilities::clamp_value(number x, number min, number max)
 	}
 
 	return x;
+}
+
+template<class number>
+inline number MathUtilities::interpolate(number min, number max, float fraction)
+{
+	return min + (max - min) * fraction;
 }

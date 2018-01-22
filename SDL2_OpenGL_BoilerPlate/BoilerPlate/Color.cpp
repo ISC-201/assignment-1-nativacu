@@ -39,13 +39,15 @@ float Color::get_red(){
 	return red;
 }
 
+float Color::get_green() {
+	return green;
+}
+
 float Color::get_blue() {
 	return blue;
 }
 
-float Color::get_green() {
-	return green;
-}
+
 
 float Color::get_opacity() {
 	return opacity;

@@ -128,9 +128,7 @@ namespace Engine
 	void App::Render()
 	{
 		ColorScheme cs;
-		cs.change_background(cs.green);
-		//std::cout << cs.grey.get_red();
-		//glClearColor(0.2f, 0.8f, 0.1f, 1.0f);
+		cs.change_background(cs.yellow);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glBegin(GL_LINE_LOOP);
